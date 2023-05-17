@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { userDataType } from "../interface/userDataType";
 import { RootState } from "../store/store";
 function Profile() {
-  const isHovering  = true;
+  const { isHovering } = useSelector((state: RootState) => state.hoverSlice);
   const { profileData } = useSelector((state: RootState) => state.profileSlice);
-  // useSelector((state: RootState) => state.hoverSlice)
+
   return (
     <div>
       <div className={"profile-section " + `${isHovering ? "" : "hidden"}`}>
