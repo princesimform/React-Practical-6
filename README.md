@@ -2,7 +2,21 @@
 
 <br />
 
-<!-- ---
+---
+
+## About Practical
+
+---
+
+<br />
+
+- optimize code
+- add environments in the code
+- generate staging and production build
+
+<br />
+
+---
 
 ## Live Working Link
 
@@ -10,19 +24,20 @@
 
 <br />
 
-- [https://prince-react-practical-5.netlify.app](https://prince-react-practical-5.netlify.app)
+- [Production Link](https://prince-react-practical-6.netlify.app)
+- [Development Link](https://codesandbox.io/p/github/princesimform/React-Practical-6/feature)
 
 <br />
 
 ---
 
-## Live Working Link
+## Technologies
 
 ---
 
 - Html
 - Css
-- Bootstrap
+- Tailwind
 - Javascript
 - ReactJs
 - Redux
@@ -74,21 +89,22 @@
 
 ---
 
-## About Practical Components
+## Environment Setup
 
 ---
 
 <br />
 
-- Components Structure
+- <b> For Environment Setup </b>
 
-**App** => All Application Components Render Here
+- Create a file called .env at the root of your project.
+- Inside the .env file, define your environment variable
+- In your React code, you can access the environment variable using `process.env.NODE_ENV`
+- Restart the development server or rebuild your app to apply the changes.
 
-- **Interface** => For Type Casting All Data Interface are Listed Here
-- **Store** => Featching and Give All Manuplation and Data of Application
-- **Provider** => Provide Data of Application using Redux from `store component`
-  - **UserList** => Here I List All User Data
-  - **Profile** => This Component Show all Specific user _Card_
+- <b> How to run in different mode </b>
+  - `npm run dev` run in Development Mode
+  - `npm run start` run in Production Mode
 
 <br />
 
@@ -113,6 +129,6 @@
 
 <br />
 
-<img src="https://github.com/princesimform/React-Practical-5/assets/125016923/df377f96-54a7-4005-a9ab-e9ad9fb9f2b5" align="center"/>
+<img src="https://github.com/princesimform/React-Practical-6/assets/125016923/1a55aa6d-19bd-42e3-a687-9e3b8dcf8d14" align="center"/>
 
-<img src="https://github.com/princesimform/React-Practical-5/assets/125016923/97d65283-7151-4c4b-ae9d-4f2452f641f3" align="center"/> -->
+<img src="https://github.com/princesimform/React-Practical-6/assets/125016923/505ec1b6-b0b7-4563-b482-0e8cbc1e8d35" align="center"/>
