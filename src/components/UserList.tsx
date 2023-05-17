@@ -61,7 +61,7 @@ function UserList() {
 
   return (
     <>
-      <div className="container mx-auto  h-[90vh] justify-center items-center max-[1000px]:flex-col font-sans">
+      <div className="container mx-auto  h-[90vh] justify-center items-center  font-sans">
         <div className="w-[65vw] h-full list-table relative  min-[1000px]:overflow-hidden">
           <table className="table-auto w-full text-left max-[1000px]:w-[800px] ">
             <thead>
@@ -78,7 +78,7 @@ function UserList() {
                 <th scope="col" className="px-6 py-3 col-span-1"></th>
               </tr>
             </thead>
-            <tbody className="h-[80vh] max-[1000px]:h-[10vh] overflow-x-auto ">
+            <tbody className="h-[80vh] max-[1000px]:h-[70vh] overflow-x-auto ">
               {isFetching ? <Loading /> : tableBody()}
             </tbody>
           </table>

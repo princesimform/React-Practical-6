@@ -8,13 +8,19 @@ function Profile() {
 
   return (
     <div>
-      <div className={"profile-section " + `${isHovering ? "" : "hidden"}`}>
-        <div className="profile-card w-[350px] m-auto border border-gray-200 rounded-[50px] shadow   py-10 px-10">
+      <div
+        className={
+          "bg-white  profile-section " +
+          `${isHovering ? "max-[1000px]:absolute  top-0 right-0" : "hidden"}`
+        }
+        id="profileCard"
+      >
+        <div className="profile-card w-[350px] m-auto border border-gray-200 rounded-[50px] shadow   py-6 px-6">
           <div className="profile">
             <img
               src={profileData.profile}
               alt=""
-              className="m-auto rounded-full mb-4 w-[150px]"
+              className="m-auto rounded-full  w-[150px]"
             />
             <p className="pt-4 mb-3 text-xl font-medium text-gray-900 inline-block">
               <span className="relative flex h-3 w-3 float-right ml-1">
