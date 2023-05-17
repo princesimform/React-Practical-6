@@ -14,7 +14,7 @@ function Pagination() {
   const InactivePageClass =
     "px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700  shadow-lg";
   return (
-    <div>
+    <div className="max-[1000px]:w-[100vw]">
       <nav aria-label="Page navigation example ">
         <ul className="inline-flex -space-x-px ">
           <li>
