@@ -4,7 +4,7 @@ import { userDataType } from "../interface/userDataType";
 import { RootState } from "../store/store";
 function Profile() {
   const { isHovering } = useSelector((state: RootState) => state.hoverSlice);
-  const { profile } = useSelector((state: RootState) => state.profileSlice);
+  const { access , email , profile , name  } = useSelector((state: RootState) => state.profileSlice);
 
   return (
     <div>
@@ -12,7 +12,7 @@ function Profile() {
         <div className="profile-card w-[350px] m-auto border border-gray-200 rounded-[50px] shadow   py-10 px-10">
           <div className="profile">
             <img
-              src={profile.profile}
+              src={profile}
               alt=""
               className="m-auto rounded-full mb-4 w-[150px]"
             />
@@ -21,9 +21,9 @@ function Profile() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
               </span>
-              {profile.name}
+              {name}
             </p>
-            <p className="mb-3 text-md  text-gray-500">{profile.email}</p>
+            <p className="mb-3 text-md  text-gray-500">{email}</p>
             <p className="mb-3 text-xl font-medium text-gray-900">
               Your Plan : Standard
             </p>

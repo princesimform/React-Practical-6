@@ -8,7 +8,8 @@ function App() {
   }, []);
   return (
     <>
-      <Provider store={store}>{userListComponent}</Provider>
+      <div>{process.env.NODE_ENV}</div>
+      {/* <Provider store={store}>{userListComponent}</Provider> */}
     </>
   );
 }
