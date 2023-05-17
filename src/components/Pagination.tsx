@@ -3,23 +3,23 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { userActions } from "../store/userSlice";
 import { RootState } from "../store/store";
-
+import { ChevronRight , ChevronLeft } from "react-feather";
 function Pagination() {
   const pageNo = useSelector((state: RootState) => state.userSlice.pageNo);
   console.log(pageNo);
 
   const dispatch = useDispatch();
   const activePageClass =
-    "px-3 py-2 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 ";
+    "px-3 py-2 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700  shadow-lg";
   const InactivePageClass =
-    "px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 ";
+    "px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700  shadow-lg";
   return (
     <div>
-      <nav aria-label="Page navigation example">
-        <ul className="inline-flex -space-x-px">
+      <nav aria-label="Page navigation example ">
+        <ul className="inline-flex -space-x-px ">
           <li>
             <button
-              className={`${InactivePageClass} `}
+              className="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 shadow-lg"
               onClick={() =>
                 dispatch(userActions.setPageNo(Number(pageNo) - 1))
               }
@@ -75,7 +75,7 @@ function Pagination() {
                 dispatch(userActions.setPageNo(Number(pageNo) + 1))
               }
               disabled={pageNo == 5 ? true : false}
-              className="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 "
+              className="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 shadow-lg"
             >
               {">>"}
             </button>

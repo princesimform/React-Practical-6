@@ -12,12 +12,14 @@ export interface userSliceType {
   pageNo: Number;
 }
 export interface profileSliceType {
-  id: number;
-  name: string;
-  email: string;
-  isActive: "active" | "inactive";
-  access: string;
-  profile: string;
+  profileData: {
+    id: number;
+    name: string;
+    email: string;
+    isActive: "active" | "inactive";
+    access: string;
+    profile: string;
+  };
 }
 export interface RootState {
   hoverSlice: hoverSliceType;

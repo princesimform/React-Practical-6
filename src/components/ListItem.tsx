@@ -21,7 +21,7 @@ function ListItem(user: userDataType) {
   return (
     <tr className="grid grid-cols-6">
       <td
-        className="mx-6 my-5 flex col-span-3 cursor-pointer"
+        className="mx-6 my-3 flex col-span-3 cursor-pointer"
         onMouseEnter={() => setChangeHover(user)}
         onMouseLeave={ussetChangeHover}
       >
@@ -37,7 +37,7 @@ function ListItem(user: userDataType) {
           <p className="text-gray-500">{user.email}</p>
         </div>
       </td>
-      <td className="mx-6 my-5 col-span-1 ">
+      <td className="mx-6 my-3 col-span-1 ">
         {/* <p className='text-green-600 font-bold'>Active</p> */}
         {user.isActive == "active" ? (
           <p className="text-green-600 font-bold">Active</p>
@@ -52,7 +52,7 @@ function ListItem(user: userDataType) {
           </select>
         )}
       </td>
-      <td className="mx-6 my-5 col-span-1 ">
+      <td className="mx-6 my-3 col-span-1 ">
         {user.access == "owner" ? (
           <p className="text-gray-800 font-bold">Owner</p>
         ) : (
@@ -64,7 +64,7 @@ function ListItem(user: userDataType) {
           </select>
         )}
       </td>
-      <td className="mx-6 my-5 col-span-1">
+      <td className="mx-6 my-3 col-span-1">
         {user.access == "owner" ? <LockMemo /> : <TrashMemo />}
       </td>
     </tr>
