@@ -82,7 +82,7 @@ function UserList() {
               {isFetching ? <Loading /> : tableBody()}
             </tbody>
           </table>
-          <div className="absolute w-full bottom-0 z-99 my-3">
+          <div className="min-[1000px]:absolute w-full bottom-0 z-99 my-3">
             <Pagination />
           </div>
         </div>

@@ -5,17 +5,15 @@ import { RootState } from "../store/store";
 function Profile() {
   const { isHovering } = useSelector((state: RootState) => state.hoverSlice);
   const { profileData } = useSelector((state: RootState) => state.profileSlice);
+  // const isHovering = true;
 
   return (
     <div>
-      <div
-        className={
-          "bg-white  profile-section " +
-          `${isHovering ? "max-[1000px]:absolute  top-0 right-0" : "hidden"}`
-        }
-        id="profileCard"
-      >
-        <div className="profile-card w-[350px] m-auto border border-gray-200 rounded-[50px] shadow   py-6 px-6">
+      <div className={" profile-section " + `${isHovering ? "" : "hidden"}`}>
+        <div
+          className="profile-card w-[350px] m-auto border border-gray-200 rounded-[50px] shadow   py-6 px-6 max-[1000px]:absolute  top-0 right-0 bg-white"
+          id="profileCard"
+        >
           <div className="profile">
             <img
               src={profileData.profile}

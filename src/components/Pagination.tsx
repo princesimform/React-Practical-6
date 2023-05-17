@@ -3,7 +3,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { userActions } from "../store/userSlice";
 import { RootState } from "../store/store";
-import { ChevronRight , ChevronLeft } from "react-feather";
+import { ChevronRight, ChevronLeft } from "react-feather";
 function Pagination() {
   const pageNo = useSelector((state: RootState) => state.userSlice.pageNo);
   console.log(pageNo);
