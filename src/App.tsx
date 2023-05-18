@@ -1,10 +1,18 @@
-import UserList from "./components/UserList";
+// import UserList from "./components/UserList";
+import React, { Suspense } from "react";
+const UserList = React.lazy(() => import("./components/UserList"));
+
 import { Provider } from "react-redux";
 import store from "./store/store";
 import { useMemo } from "react";
+import Loading from "./components/Loading";
 function App() {
   const userListComponent = useMemo(() => {
-    return <UserList />;
+    return (
+      <Suspense fallback={<Loading />}>
+        <UserList />
+      </Suspense>
+    );
   }, []);
   return (
     <>
