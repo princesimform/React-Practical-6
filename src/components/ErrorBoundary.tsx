@@ -1,34 +1,3 @@
-// import React, { ReactNode } from "react";
-// import { useErrorBoundary } from "use-error-boundary";
-
-// interface ErrorBoundaryProps {
-//   children: ReactNode;
-// }
-// // const ErrorBoundary: React.FC<ErrorBoundaryProps> = ({ children }) => {
-// //   const [error, resetErrorBoundary] = useErrorBoundary();
-// //   if (error) {
-// //     return <h1> Something Went Wrong</h1>;
-// //   }
-
-// //   return <>{children}</>;
-// // };
-
-// // export default ErrorBoundary;
-
-// // import React from 'react'
-
-// function ErrorBoundary({ children }: ErrorBoundaryProps) {
-//   const error = useErrorBoundary();
-//     console.log(error);
-
-//   if (error.didCatch) {
-//     return <h1> Something Went Wrong</h1>;
-//   }
-//   return <div>{children}</div>;
-// }
-
-// export default ErrorBoundary;
-
 import React, { Component, ErrorInfo, ReactNode } from "react";
 
 interface ErrorBoundaryProps {

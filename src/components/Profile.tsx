@@ -5,7 +5,6 @@ import { RootState } from "../store/store";
 function Profile() {
   const { isHovering } = useSelector((state: RootState) => state.hoverSlice);
   const { profileData } = useSelector((state: RootState) => state.profileSlice);
-  // const isHovering = true;
 
   return (
     <div>
