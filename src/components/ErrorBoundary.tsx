@@ -20,7 +20,6 @@ export default class ErrorBoundary extends Component<
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     // You can log the error or send it to an error reporting service
     console.error("Error:", error);
-    console.error("Error Info:", errorInfo);
     this.setState({ hasError: true });
   }
 
